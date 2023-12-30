@@ -59,10 +59,12 @@ As I'm using Virtualbox Bridged Network on both the Client machine and AD Server
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Ping%20Pong.jpg) 
 
 # Joining Client Machines to the Domain
+
           a) Right-click on "This PC" or "My Computer" and select "Properties."
           b) In System Properties, go to the "Computer Name" tab.
           c) Remove WORKGROUP, select domain and restart.
           d) Select the "Domain" option and enter the domain name "soran.local", 
+          
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Joining%20domain.jpg) 
 
 Step 5 - Provide domain admin credentials and machine will be restarted. A welcome message will appear: 
@@ -86,5 +88,33 @@ Step 1 - Our first step is to create a new group to add newly created user. Foll
 
           a) Open 'Active Directory Users and Computers.'
           b) Right-click on the domain, select 'New,' then 'Group.'
-          c) Enter the group details and confirm creation."
+          c) Enter the group details and confirm.
 
+As I created a group named "DevSecOps Team". 
+
+Step 2 - Adding newly created user (forza.taye) to the group(DevSecOps Team).
+![image](https://github.com/forza-dc/Active-Directory/blob/main/Group%20joining%20to%20user.jpg) 
+
+Step 3 - Creating Group Policy Object
+
+          a) Open Group Policy Management Console.
+          b) Right-click on the domain or OU and choose "Create a GPO in this domain".
+          c) Enter a name for the GPO (DevSecOps GPO-1) and click "OK".
+![image](https://github.com/forza-dc/Active-Directory/blob/main/New%20Gpo.jpg) 
+
+Step 3 - Applying Policy on GPO
+
+          a) Open Group Policy Management Console.
+          b) Navigate to the desired GPO, as my GPO is "DevSecOps GPO-1".
+          c) Right-click on the chosen GPO and select "Edit."
+          d) Under "User Configuration," go to "Policies" > "Administrative Tempplate: Policy Defination" > "Control Panel" > "Add or Remove Programs". Add or Remove tab will open.
+          e) On Add or Remove Programs tab, double click on "Remove Add or Remove Programs". A new tab for Remove Add or Remove Programs will open.
+          f) Click "Enabled" and click "Apply".
+![image](https://github.com/forza-dc/Active-Directory/blob/main/Policy%20Creation%20for%20Add%20or%20remove%20programs.jpg) 
+
+          
+          
+          
+          
+          
+          

@@ -26,7 +26,7 @@ Step 3 -  Now you can log on to Windows. The Server Manager Dashboard opens 
 
 Step 1- Window is getting ready.
 
-![image](https://github.com/forza-dc/Active-Directory/blob/main/Installing%20Win%2019%20Srv.jpg) 
+![image](https://github.com/forza-dc/Active-Directory/blob/main/Setting%20up%20windows%2010.png) 
 
 Step 1- Now you can see the windows 10 dektop, we will be joining this machine to domain.
 

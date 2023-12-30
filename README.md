@@ -1,15 +1,18 @@
-# Unboxing Active Directory with Group Policy Magic
+# 👨🏻‍💻 🌎 🔐 Unboxing Active Directory with Group Policy Magic 👨🏻‍💻 🌎 🔐
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Microsoft%20Image%20Front.png)  
+
 ## Lab Overview  
 Embarking on the journey of network administration using VirtualBox and Windows Server 2019 brings an exciting opportunity to delve into the world of Active Directory. In this step-by-step guide, we've navigated through the initial setup stages, from installing VirtualBox and Windows Server 2019 to configuring Active Directory Directory Services. Not only have we created a domain and configured the domain controller, but we've also taken the extra step of implementing a crucial aspect of network management - Group Policy. In this article, I'll walk you through the process I followed to set up a Group Policy restricting control panel access for a user group. Let's explore how these foundational steps lay the groundwork for a secure, well-organized network environment.
-# Network Layout
+
+## Network Layout
+
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Network%20Diagram.jpg)  
 
-# Setting Up VirtualBox and Virtual Machine
+## Setting Up VirtualBox and Virtual Machine
 The initial step in my project involved configuring VirtualBox to create a seamless environment for a Windows 19 Server dedicated to Active Directory. Alongside, I set up a Windows 10 virtual machine as a client, enabling the seamless enforcement of policies from the server to the client's end.
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Setting%20Up%20VirtualBox%20and%20Virtual%20Machine.png) 
 
-# Installing Windows Server 2019
+## Installing Windows Server 2019
 Step 1- Follow the onscreen prompt to install windows server.
 
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Installing%20Win%2019%20Srv.jpg)  
@@ -23,7 +26,7 @@ Step 3 -  Now you can log on to Windows. The Server Manager Dashboard opens 
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Server%20Manager%20Screen.jpg) 
 
 
-# Setting Up Windows 10 Machine (End User)
+## Setting Up Windows 10 Machine (End User)
 
 Step 1- Window is getting ready.
 
@@ -33,7 +36,7 @@ Step 1- Now you can see the windows 10 dektop, we will be joining this machine t
 
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Windows%2010%20main%20page.png) 
 
-# Configuring the Active Directory Directory Services(AD DS)
+## Configuring the Active Directory Directory Services(AD DS)
 Now we would set up this computer as a domain controller. We do this by installing the AD DS role to the server.
 
 Step 1 - Click on Add Role and Features in the Dashboard. This opens the Add Roles and Features Wizard.
@@ -42,7 +45,7 @@ Step 1 - Click on Add Role and Features in the Dashboard. This opens the Add
 Step 2 - Click on Next > Next until you have a list of Features. In the list, check Active Directory Directory Services as shown below:
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/AD%20DC%20Step%202.png) 
 
-# Create a Domain and Configure the Domain Controller
+## Create a Domain and Configure the Domain Controller
 
 Step 1 - Click on the yellow triangle at the upper right and click 'Promote this server to domain controller'. The 'Active Directory Domain Services Configuration Wizard will open.
 
@@ -58,7 +61,7 @@ As I'm using Virtualbox Bridged Network on both the Client machine and AD Server
 
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Ping%20Pong.jpg) 
 
-# Joining Client Machines to the Domain
+## Joining Client Machines to the Domain
 
           a) Right-click on "This PC" or "My Computer" and select "Properties."
           b) In System Properties, go to the "Computer Name" tab.
@@ -70,7 +73,7 @@ As I'm using Virtualbox Bridged Network on both the Client machine and AD Server
 Step 5 - Provide domain admin credentials and machine will be restarted. A welcome message will appear: 
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Joining%20domain.jpg)
 
-# New Domain User Creation
+## New Domain User Creation
 I intend to create a new user within the 'soran.local' domain to implement targeted group policies. 
 
           a) Access 'Active Directory Users and Computers.'
@@ -82,7 +85,7 @@ I intend to create a new user within the 'soran.local' domain to implement targe
 Now, I'm able to login with the newly created user.
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/New%20user%20login.jpg) 
 
-# Group Policy Creation and Enforcement
+## Group Policy Creation and Enforcement
 
 Step 1 - Our first step is to create a new group to add newly created user. Follow below steps to create a new grouo:
 
@@ -120,7 +123,7 @@ Once you done with the policy creation, Navigate to the desired GPO, as my GPO i
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Policy%20Enforcement.png) 
 
 
-# Policy Testing on User End
+## Policy Testing on User End
 
 After implementing the policy, I logged in using a user (forza.taye) who is in the group (DevSecOps Team). Upon attempting to download WinRAR software, the system prompted for admin credentials, affirming the policy's restriction on software installation without elevated access.
 

@@ -114,12 +114,25 @@ I intend to enforce a policy that prevents any user belonging to the 'DevSecOps 
           f) Click "Enabled" and click "Apply".
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Policy%20Creation%20for%20Add%20or%20remove%20programs.jpg) 
 
-Step 3 - Policy Enforcement
+Step 4 - Policy Enforcement
 
 Once you done with the policy creation, Navigate to the desired GPO, as my GPO is "DevSecOps GPO-1". Right click on policy and elect Enforce.
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Policy%20Enforcement.png) 
-            
-          
-          
-          
-          
+
+
+# Policy Testing on User End
+
+After implementing the policy, I logged in using a user (forza.taye) who is in the group (DevSecOps Team). Upon attempting to download WinRAR software, the system prompted for admin credentials, affirming the policy's restriction on software installation without elevated access.
+
+![image](https://github.com/forza-dc/Active-Directory/blob/main/Winrar%20software%20installation%20attempt.jpg) 
+
+Let's put the administrator credentials to verify if the system allows the software installation.
+
+![image](https://github.com/forza-dc/Active-Directory/blob/main/Administrator%20password%20to%20install%20the%20program.jpg) 
+
+Upon entering the admin credentials, WinRAR installed successfully. Our policy implementation appears to be effective. 🚀🚀🚀🚀
+
+![image](https://github.com/forza-dc/Active-Directory/blob/main/Winrar%20Successfully%20Installed..jpg) 
+
+
+

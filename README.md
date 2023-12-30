@@ -134,5 +134,5 @@ Upon entering the admin credentials, WinRAR installed successfully. Our policy i
 
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Winrar%20Successfully%20Installed..jpg) 
 
-
+👨🏻‍💻 🚀 Active Directory setup, policy creation, and enforcement have been successfully completed and tested. The project concludes with a demonstrated implementation of user restrictions on software installation, validating the effectiveness of the policies established. 👨🏻‍💻 🚀
 

@@ -1,4 +1,4 @@
-# Unboxing Active Directory with Group Policy Magic
+![WhatsApp Image 2023-12-03 at 04 29 10_d14731e1](https://github.com/forza-dc/Active-Directory/assets/37484962/9f5e5354-3386-407c-b30b-81524bdd738a)# Unboxing Active Directory with Group Policy Magic
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Microsoft%20Image%20Front.png)  
 ## Lab Overview  
 Embarking on the journey of network administration using VirtualBox and Windows Server 2019 brings an exciting opportunity to delve into the world of Active Directory. In this step-by-step guide, we've navigated through the initial setup stages, from installing VirtualBox and Windows Server 2019 to configuring Active Directory Directory Services. Not only have we created a domain and configured the domain controller, but we've also taken the extra step of implementing a crucial aspect of network management - Group Policy. In this article, I'll walk you through the process I followed to set up a Group Policy restricting control panel access for a user group. Let's explore how these foundational steps lay the groundwork for a secure, well-organized network environment.
@@ -57,3 +57,14 @@ Step 3 - Click on next and then enter a password. Click Next. As you can see
 As I'm using Virtualbox Bridged Network on both the Client machine and AD Server, you just need to use the AD Server's IP in the IPV4 DNS settings on the client side. After that, verify the connectivity using 'ping pong' on both sides. Please refer to the snapshot below while verifying the connection from the client side towards the end user:
 
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Ping%20Pong.jpg) 
+
+# Joining Client Machines to the Domain
+Step 1 - Right-click on "This PC" or "My Computer" and select "Properties."
+Step 2 - In System Properties, go to the "Computer Name" tab.
+Step 3 - Remove WORKGROUP, select domain and restart.
+Step 4 - Select the "Domain" option and enter the domain name "soran.local", 
+![image](https://github.com/forza-dc/Active-Directory/blob/main/Joining%20domain.jpg) 
+
+Stwp 5 - Provide domain admin credentials and machine will be restarted. A 
+
+

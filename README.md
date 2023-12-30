@@ -32,5 +32,7 @@ Step 1- Now you can see the windows 10 dektop, we will be joining this machine t
 
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Windows%2010%20main%20page.png) 
 
+# Configuring the Active Directory Directory Services(AD DS)
+Now we would set up this computer as a domain controller. We do this by installing the AD DS role to the server.
 
-
+Step 1 - Click on Add Role and Features in the Dashboard. This opens the Add Roles and Features Wizard.

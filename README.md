@@ -68,5 +68,11 @@ Step 4 - Select the "Domain" option and enter the domain name "soran.local",
 Step 5 - Provide domain admin credentials and machine will be restarted. A welcome message will appear: 
 ![image](![image](https://github.com/forza-dc/Active-Directory/blob/main/Joining%20domain.jpg)
 
+# New Domain User Creation
+I intend to create a new user within the 'soran.local' domain to implement targeted group policies.
+Step 1: Access 'Active Directory Users and Computers.'
+Step 2: Within the Active Directory Users and Computers console, navigate to the 'soran.local' domain. Right-click and select 'New User.'
+Step 3: A new window for creating a user object will appear. Fill in the required user information, including the password, and proceed by clicking Next.
 
+![image](![image](https://github.com/forza-dc/Active-Directory/blob/main/Joining%20domain.jpg) 
 

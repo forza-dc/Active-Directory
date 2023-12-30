@@ -44,7 +44,8 @@ Step 2 - Click on Next > Next until you have a list of Features. In the list
 # Create a Domain and Configure the Domain Controller
 
 Step 1 - Click on the yellow triangle at the upper right and click 'Promote this server to domain controller'. The 'Active Directory Domain Services Configuration Wizard will open.
-![image](https://github.com/forza-dc/Active-Directory/blob/main/Create%20DC%20Step%201.pngv) 
+
+![image](https://github.com/forza-dc/Active-Directory/blob/main/Create%20DC%20Step%201.png) 
 
 Step 2 - Click on 'Add a new forest' and enter a name for the domain and add .local suffix. For me, it's soran.local.
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Create%20DC%20step%202.png) 

@@ -22,6 +22,7 @@ Step 3 -  Now you can log on to Windows. The Server Manager Dashboard opens 
 
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Server%20Manager%20Screen.jpg) 
 
+
 # Setting Up Windows 10 Machine (End User)
 
 Step 1- Window is getting ready.
@@ -53,6 +54,6 @@ Step 2 - Click on 'Add a new forest' and enter a name for the domain and add
 Step 3 - Click on next and then enter a password. Click Next. As you can see I can login with SORAN\Adminstrator. Enter the password you set.
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Create%20DC%20step%202.png) 
 
+As I'm using Virtualbox Bridged Network on both the Client machine and AD Server, you just need to use the AD Server's IP in the IPV4 DNS settings on the client side. After that, verify the connectivity using 'ping pong' on both sides. Please refer to the snapshot below while verifying the connection from the client side towards the end user:
 
-
-
+![image](https://github.com/forza-dc/Active-Directory/blob/main/Ping%20Pong.jpg) 

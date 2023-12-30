@@ -59,20 +59,32 @@ As I'm using Virtualbox Bridged Network on both the Client machine and AD Server
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Ping%20Pong.jpg) 
 
 # Joining Client Machines to the Domain
-Step 1 - Right-click on "This PC" or "My Computer" and select "Properties."
-Step 2 - In System Properties, go to the "Computer Name" tab.
-Step 3 - Remove WORKGROUP, select domain and restart.
-Step 4 - Select the "Domain" option and enter the domain name "soran.local", 
+          a) Right-click on "This PC" or "My Computer" and select "Properties."
+          b) In System Properties, go to the "Computer Name" tab.
+          c) Remove WORKGROUP, select domain and restart.
+          d) Select the "Domain" option and enter the domain name "soran.local", 
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Joining%20domain.jpg) 
 
 Step 5 - Provide domain admin credentials and machine will be restarted. A welcome message will appear: 
-![image](![image](https://github.com/forza-dc/Active-Directory/blob/main/Joining%20domain.jpg)
+![image](https://github.com/forza-dc/Active-Directory/blob/main/Joining%20domain.jpg)
 
 # New Domain User Creation
-I intend to create a new user within the 'soran.local' domain to implement targeted group policies.
-Step 1: Access 'Active Directory Users and Computers.'
-Step 2: Within the Active Directory Users and Computers console, navigate to the 'soran.local' domain. Right-click and select 'New User.'
-Step 3: A new window for creating a user object will appear. Fill in the required user information, including the password, and proceed by clicking Next.
+I intend to create a new user within the 'soran.local' domain to implement targeted group policies. 
 
-![image](![image](https://github.com/forza-dc/Active-Directory/blob/main/Joining%20domain.jpg) 
+          a) Access 'Active Directory Users and Computers.'
+          b) Within the Active Directory Users and Computers console, navigate to the 'soran.local' domain. Right-click and select 'New User.'
+          c) A new window for creating a user object will appear. Fill in the required user information, including the password, and proceed by clicking Next.
+
+![image](https://github.com/forza-dc/Active-Directory/blob/main/Joining%20domain.jpg) 
+
+Now, I'm able to login with the newly created user.
+![image](https://github.com/forza-dc/Active-Directory/blob/main/New%20user%20login.jpg) 
+
+# Group Policy Creation and Enforcement
+
+Step 1 - Our first step is to create a new group to add newly created user. Follow below steps to create a new grouo:
+
+          a) Open 'Active Directory Users and Computers.'
+          b) Right-click on the domain, select 'New,' then 'Group.'
+          c) Enter the group details and confirm creation."
 

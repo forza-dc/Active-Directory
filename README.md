@@ -102,7 +102,9 @@ Step 3 - Creating Group Policy Object
           c) Enter a name for the GPO (DevSecOps GPO-1) and click "OK".
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/New%20Gpo.jpg) 
 
-Step 3 - Applying Policy on GPO
+Step 3 - Crearting Policy on GPO
+
+I intend to enforce a policy that prevents any user belonging to the 'DevSecOps Team' group from adding or removing programs. Whenever a user from this group attempts to install or reinstall a program, it will prompt for administrator credentials.
 
           a) Open Group Policy Management Console.
           b) Navigate to the desired GPO, as my GPO is "DevSecOps GPO-1".
@@ -112,8 +114,11 @@ Step 3 - Applying Policy on GPO
           f) Click "Enabled" and click "Apply".
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/Policy%20Creation%20for%20Add%20or%20remove%20programs.jpg) 
 
-          
-          
+Step 3 - Policy Enforcement
+
+Once you done with the policy creation, Navigate to the desired GPO, as my GPO is "DevSecOps GPO-1". Right click on policy and elect Enforce.
+![image](https://github.com/forza-dc/Active-Directory/blob/main/Policy%20Enforcement.png) 
+            
           
           
           

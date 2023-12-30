@@ -41,4 +41,17 @@ Step 1 - Click on Add Role and Features in the Dashboard. This opens the Add
 Step 2 - Click on Next > Next until you have a list of Features. In the list, check Active Directory Directory Services as shown below:
 ![image](https://github.com/forza-dc/Active-Directory/blob/main/AD%20DC%20Step%202.png) 
 
+# Create a Domain and Configure the Domain Controller
+
+Step 1 - Click on the yellow triangle at the upper right and click 'Promote this server to domain controller'. The 'Active Directory Domain Services Configuration Wizard will open.
+![image](https://github.com/forza-dc/Active-Directory/blob/main/Create%20DC%20Step%201.pngv) 
+
+Step 2 - Click on 'Add a new forest' and enter a name for the domain and add .local suffix. For me, it's soran.local.
+![image](https://github.com/forza-dc/Active-Directory/blob/main/Create%20DC%20step%202.png) 
+
+Step 3 - Click on next and then enter a password. Click Next. As you can see I can login with SORAN\Adminstrator. Enter the password you set.
+![image](https://github.com/forza-dc/Active-Directory/blob/main/Create%20DC%20step%202.png) 
+
+
+
 
